@@ -47,7 +47,7 @@ FFAzey draws its own overlay windows — **you do NOT add anything to ACT's "Ove
 2. **Data feed green** — Setup tab → the *OverlayPlugin data feed* row must be green (ACT running + its WSServer started). The meter stays invisible until combat data is flowing.
 3. **Overlays tab → switch "DPS meter" to On.** A transparent window appears (top-left by default). The Overlays tab also has a **"How do I show the DPS meter?"** button with these same steps.
 4. **Hit a striking dummy.** Numbers fill in; out of combat the meter can look empty — that's normal.
-5. **Move / resize it:** click **Move / resize**, drag the window by its title bar and pull its edges, then click **Done**. Use the **Scale** slider to size the contents. (*Interactive* is only needed to click into the meter, e.g. a DPS row.)
+5. **Move / resize it:** turn on **Move & resize**, drag the box around and pull its edges, then turn it back off so it can't shift mid-fight. Use the **Scale** slider to size the contents. (*Interactive* is only needed to click into the meter, e.g. a DPS row.)
 
 > Still blank? It's almost always Fullscreen mode (step 1) or the data feed (step 2) — not the overlay itself. The old ACT/OverlayPlugin "add overlay" method still works but isn't needed and is easy to get wrong; the toggles inside FFAzey are the supported way.
 

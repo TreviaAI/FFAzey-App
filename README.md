@@ -39,6 +39,18 @@ Keep it private — don't share it publicly, don't show DPS in official/streamed
 3. Click **▶ Start FFAzey** — it launches ACT, waits for the data feed, and opens your enabled overlays.
 4. In the **Overlays** tab, toggle which overlays you want (DPS meter, timeline, skill flash) and position them.
 
+## Showing the DPS meter & other overlays
+
+FFAzey draws its own overlay windows — **you do NOT add anything to ACT's "OverlayPlugin → add overlay" screen.** To show the DPS meter:
+
+1. **FFXIV in Borderless Windowed** (System Config → Display Settings → Screen Mode). Exclusive Fullscreen hides every overlay.
+2. **Data feed green** — Setup tab → the *OverlayPlugin data feed* row must be green (ACT running + its WSServer started). The meter stays invisible until combat data is flowing.
+3. **Overlays tab → switch "DPS meter" to On.** A transparent window appears (top-left by default). The Overlays tab also has a **"How do I show the DPS meter?"** button with these same steps.
+4. **Hit a striking dummy.** Numbers fill in; out of combat the meter can look empty — that's normal.
+5. **Move / resize it:** flip that overlay to *Interactive*, drag/resize, then flip it back to *Click-through* so your clicks pass through to the game.
+
+> Still blank? It's almost always Fullscreen mode (step 1) or the data feed (step 2) — not the overlay itself. The old ACT/OverlayPlugin "add overlay" method still works but isn't needed and is easy to get wrong; the toggles inside FFAzey are the supported way.
+
 ## In-game plugin (loot pass, skill flash, timeline bar, headmarkers)
 
 These run inside the game via Dalamud. To install/update the plugin:
